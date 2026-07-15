@@ -9,7 +9,8 @@ const firebaseConfig = {
   projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || "mock-project",
   storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET || "mock-project.appspot.com",
   messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || "1234567890",
-  appId: import.meta.env.VITE_FIREBASE_APP_ID || "1:1234567890:web:1234567890"
+  appId: import.meta.env.VITE_FIREBASE_APP_ID || "1:1234567890:web:1234567890",
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID || undefined
 };
 
 const app = initializeApp(firebaseConfig);
